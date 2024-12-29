@@ -22,25 +22,22 @@ public class Pessoa {
     @JsonProperty("idade")
     private int idade;
 
-    @Getter
     @Column
     @JsonProperty("genero")
     private String genero;
 
-    @Getter
-    @Enumerated(EnumType.STRING)
+    @Column
     @JsonProperty("raca")
-    private Raca raca;
+    private String raca;
 
-    @Getter
-    @Enumerated(EnumType.STRING)
+    @Column
     @JsonProperty("escolaridade")
-    private Escolaridade escolaridade;
+    private String escolaridade;
 
     @Getter
-    @Enumerated(EnumType.STRING)
+    @Column
     @JsonProperty("estadoCivil")
-    private EstadoCivil estadoCivil;
+    private String estadoCivil;
 
     @Column
     @JsonProperty("emprego")
@@ -50,10 +47,9 @@ public class Pessoa {
     @JsonProperty("auxilio")
     private String auxilio;
 
-    @Getter
-    @Enumerated(EnumType.STRING)
+    @Column
     @JsonProperty("dependentes")
-    private Dependentes dependentes;
+    private String dependentes;
 
     @Column
     @JsonProperty("religiao")

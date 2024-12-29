@@ -12,12 +12,14 @@
 
 <!-- Formulário -->
 <form id="formCadastro">
+    <!-- Nome e Idade -->
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required><br><br>
 
     <label for="idade">Idade:</label>
     <input type="number" id="idade" name="idade" required><br><br>
 
+    <!-- Gênero -->
     <label for="genero">Gênero:</label>
     <select id="genero" name="genero">
         <option value="MASCULINO">Masculino</option>
@@ -25,6 +27,7 @@
         <option value="OUTRO">Outro</option>
     </select><br><br>
 
+    <!-- Raça -->
     <label for="raca">Raça:</label>
     <select id="raca" name="raca">
         <option value="BRANCO">Branco</option>
@@ -32,20 +35,95 @@
         <option value="PARDO">Pardo</option>
         <option value="PRETO">Preto</option>
     </select><br><br>
-    
-    <label for="escolariadade">Escolaridade:</label>
-    <select id="escolariadade" name="escolariadade">
-        <option value="ENSINO MÉDIO INCOMPLETO">Ensino médio incompleto</option>
-        <option value="ENSINO MÉDIO COMPLETO">Ensino médio completo</option>
-        <option value="GRADUAÇÃO INCOMPLETA">Graduação incompleta</option>
-        <option value="GRADUAÇÃO COMPLETA">Graduação completa</option>
-        <option value="ENSINO FUNDAMENTAL INCOMPLETO">Ensino fundamental incompleto</option>
-        <option value="ENSINO FUNDAMENTAL COMPLETO">Ensino fundamental completo</option>
-        <option value="PREFERE NÃO DIZER">Prefere não dizer</option>
+
+    <!-- Escolaridade -->
+    <label for="escolaridade">Escolaridade:</label>
+    <select id="escolaridade" name="escolaridade">
+        <option value="ENSINOMÉDIOINCOMPLETO">Ensino médio incompleto</option>
+        <option value="ENSINOMÉDIOCOMPLETO">Ensino médio completo</option>
+        <option value="GRADUAÇÃOINCOMPLETA">Graduação incompleta</option>
+        <option value="GRADUAÇÃOCOMPLETA">Graduação completa</option>
+        <option value="ENSINOFUNDAMENTALINCOMPLETO">Ensino fundamental incompleto</option>
+        <option value="ENSINOFUNDAMENTALCOMPLETO">Ensino fundamental completo</option>
+        <option value="PREFERENÃODIZER">Prefere não dizer</option>
     </select><br><br>
+
+    <!-- Estado Civil -->
+    <label for="estado-civil">Estado Civil:</label><br>
+    <input type="radio" id="casado" name="estado-civil" value="Casado">
+    <label for="casado">Casado</label><br>
+    <input type="radio" id="viuvo" name="estado-civil" value="Viúvo">
+    <label for="viuvo">Viúvo</label><br>
+    <input type="radio" id="divorciado" name="estado-civil" value="Divorciado">
+    <label for="divorciado">Divorciado</label><br>
+    <input type="radio" id="separado" name="estado-civil" value="Separado">
+    <label for="separado">Separado</label><br>
+    <input type="radio" id="solteiro" name="estado-civil" value="Solteiro">
+    <label for="solteiro">Solteiro</label><br>
+    <input type="radio" id="nao-dizer" name="estado-civil" value="Prefere não dizer">
+    <label for="nao-dizer">Prefere não dizer</label><br><br>
+
+    <!-- Emprego -->
+    <label for="emprego">Emprego:</label><br>
+    <input type="radio" id="meioperiodo" name="emprego" value="Meio período">
+    <label for="meioperiodo">Meio período</label><br>
+    <input type="radio" id="desempregado" name="emprego" value="Desempregado">
+    <label for="desempregado">Desempregado</label><br>
+    <input type="radio" id="incapaz" name="emprego" value="Incapaz de trabalhar">
+    <label for="incapaz">Incapaz de trabalhar</label><br>
+    <input type="radio" id="aposentado" name="emprego" value="Aposentado">
+    <label for="aposentado">Aposentado</label><br>
+    <input type="radio" id="nao-dizer-emprego" name="emprego" value="Prefere não dizer">
+    <label for="nao-dizer-emprego">Prefere não dizer</label><br><br>
+
+    <!-- Auxilio -->
+    <label for="auxilio">Auxilio:</label><br>
+    <input type="radio" id="bolsafamilia" name="auxilio" value="Bolsa Familia">
+    <label for="bolsafamilia">bolsa Familia</label><br>
+    <input type="radio" id="outro" name="auxilio" value="Outro">
+    <label for="outro">Outro</label><br><br>
+
+    <!-- Família e Dependentes -->
+    <label for="dependentes">Família e Dependentes:</label><br>
+    <input type="radio" id="nenhum" name="dependentes" value="Nenhum">
+    <label for="nenhum">Nenhum</label><br>
+    <input type="radio" id="um" name="dependentes" value="1">
+    <label for="um">1</label><br>
+    <input type="radio" id="dois" name="dependentes" value="2">
+    <label for="dois">2</label><br>
+    <input type="radio" id="tres" name="dependentes" value="3">
+    <label for="tres">3</label><br>
+    <input type="radio" id="quatro" name="dependentes" value="4">
+    <label for="quatro">4</label><br>
+    <input type="radio" id="cinco" name="dependentes" value="5 ou mais">
+    <label for="cinco">5 ou mais</label><br>
+    <input type="radio" id="nao-dizer-dependentes" name="dependentes" value="Prefere não dizer">
+    <label for="nao-dizer-dependentes">Prefere não dizer</label><br><br>
+
+    <!-- Religião -->
+    <label for="religiao">Religião:</label><br>
+    <input type="radio" id="catolico" name="religiao" value="Católico">
+    <label for="catolico">Católico</label><br>
+    <input type="radio" id="evangelico" name="religiao" value="Evangélico">
+    <label for="evangelico">Evangélico</label><br>
+    <input type="radio" id="candomble" name="religiao" value="Candomblé">
+    <label for="candomble">Candomblé</label><br>
+    <input type="radio" id="umbanda" name="religiao" value="Umbanda">
+    <label for="umbanda">Umbanda</label><br>
+    <input type="radio" id="espirita" name="religiao" value="Espírita">
+    <label for="espirita">Espírita</label><br>
+    <input type="radio" id="nenhuma" name="religiao" value="Nenhum">
+    <label for="nenhuma">Nenhum</label><br>
+    <input type="radio" id="nao-dizer-religiao" name="religiao" value="Prefere não dizer">
+    <label for="nao-dizer-religiao">Prefere não dizer</label><br>
+    <input type="radio" id="outra" name="religiao" value="Outro">
+    <label for="outra">Outro</label><br><br>
 
     <button type="submit">Cadastrar</button>
 </form>
+
+<!-- Area de Feedback -->
+<div id="feedback"></div>
 
 <script>
     // Adiciona um evento ao formulário para capturar o envio
@@ -57,7 +135,13 @@
             nome: document.getElementById('nome').value,
             idade: document.getElementById('idade').value,
             genero: document.getElementById('genero').value,
-            raca: document.getElementById('raca').value
+            raca: document.getElementById('raca').value,
+            escolaridade: document.getElementById('escolaridade').value,
+            estadoCivil: document.querySelector('input[name="estado-civil"]:checked')?.value,
+            emprego: document.querySelector('input[name="emprego"]:checked')?.value,
+            auxilio: document.querySelector('input[name="auxilio"]:checked')?.value,
+            dependentes: document.querySelector('input[name="dependentes"]:checked')?.value,
+            religiao: document.querySelector('input[name="religiao"]:checked')?.value
         };
 
         // Envia os dados usando fetch
@@ -67,14 +151,23 @@
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(pessoaData), // objeto pessoa a ser enviado no corpo
-
         })
             .then(response => response.text())
-            .then(data => console.log(window.alert(data)))
-            .catch(error => console.error('Erro ao cadastrar pessoa:', error));
-
+            .then(data => {
+                // Exibe mensagem de sucesso ou erro
+                const feedback = document.getElementById('feedback');
+                feedback.textContent = data;  // Mostra a resposta do servidor
+                feedback.style.color = "green";  // Cor verde para sucesso
+            })
+            .catch(error => {
+                console.error('Erro ao cadastrar pessoa:', error);
+                const feedback = document.getElementById('feedback');
+                feedback.textContent = "Erro ao cadastrar pessoa. Tente novamente.";  // Mensagem de erro
+                feedback.style.color = "red";  // Cor vermelha para erro
+            });
     });
 </script>
+
 </body>
 
 </html>
